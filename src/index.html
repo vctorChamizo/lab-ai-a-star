@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">   
+
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/nod.js"></script>
+    <script type="text/javascript" src="./js/a_star.js"></script>
+
+    <title>a_Estrella</title>
+</head>
+
+<body>
+    <!-- content_head -->
+    <div id = "content_head" class="row background_main">
+        <h3 class="style_tittle"> Algortimo de Estrella - Ingeniería del Conocimiento</h3>
+        <div id = "content_buttons">
+            <button id = "btn_start" type = "button" class = "btn btn-primary expansive">Comenzar</button>
+        </div>
+    </div>
+    <!-- content_head -->
+
+    <!-- content_alert_danger --> 
+    <div id = "content_alert_danger" class = "container_fluid">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" type="hidden">
+            <div id = "alert_text_danger"></div>
+            <button id = "btn_close_danger" type="button" class="close"><span aria-hidden="true">&times;</span></button>
+        </div>       
+    </div>
+    <!-- content_alert_danger --> 
+
+    <!-- content_main --> 
+    <div id = "content_main">
+        <!-- data_panel -->
+        <div id = "data_panel" class="col-3">
+            <ul class="list-group content_info">
+                <li class="list-group-item background_main">Filas</li>
+                <input type="number" class="form-control" id="input_rows">
+            </ul>
+
+            <ul class="list-group content_info">
+                <li class="list-group-item background_main">Columnas</li>
+                <input type="number" class="form-control" id="input_columns">
+            </ul>
+
+            <ul class="list-group content_info">
+                <button id = "btn_create" type="button" class="btn btn-secondary expansive">Crear</button>
+            </ul>
+        </div>
+        <!-- data_panel -->
+
+        <!-- content_table -->
+        <div id = "content_table" class = "container">
+            <div id="content_ext"><div id="content_int"></div></div>
+        </div> <!-- content_table -->
+
+        <!-- action_panel -->
+        <div id = "action_panel" class="col-3">
+            <ul class="list-group content_info">
+                <li class="list-group-item background_main">Acciones</li>
+                <li class="list-group-item">
+                    <div class="btn-group-vertical expansive">
+                            <button id = "btn_begin" type="button" class="btn btn-sm background_begin btn_action">Comienzo</button>
+                            <button id = "btn_end" type="button" class="btn btn-sm background_end btn_action">Final</button>
+                            <button id = "btn_obstacle" type="button" class="btn btn-sm background_obstacle btn_action">Obstáculo</button>                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- action_panel -->
+    </div>
+    <!-- content_main -->
+
+    <!-- content_alert_success --> 
+    <div id = "content_alert_success" class = "container_fluid">
+        <div class="alert alert-dark alert-dismissible fade show" role="alert" type="hidden">
+            <div id = "alert_text_success"></div>  
+        </div>
+    <!-- content_alert_success -->
+</body>
+</html>
