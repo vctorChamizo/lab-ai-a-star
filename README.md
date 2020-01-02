@@ -11,7 +11,8 @@ Below is a demo of the running application:
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/32466953/69864526-6c0b4780-129f-11ea-96de-df6f9ab7968c.gif)
 
 ## Technologies
-The implementation of this project was carried out using **JavaScript**.
+- **HTML - CSS**: used for project web layout.
+- **JavaScript**: used for the development of game logic and the treatment of game DOM.
 
 ## Author
 The project has been carried out by [Victor Chamizo](https://github.com/vctorChamizo).
